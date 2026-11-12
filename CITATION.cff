@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper."
+title: "Standard SAE Metrics Do Not Predict Intervention Effects: A Controlled Audit and a Zero-Intervention First-Order Screen"
+type: software
+authors:
+  - name: "Anonymous"
+    affiliation: "Under double-blind review"
+year: 2026
+version: "1.0.0"
+license: MIT
+repository-code: "https://github.com/<your-account>/cfse-causal-screen"
+abstract: >-
+  Code and result artefacts for an audit of standard sparse-autoencoder quality metrics
+  against measured single-feature ablation effects on ten open-weight language models,
+  together with a zero-intervention first-order predictor and a three-level admission gate.
+keywords:
+  - sparse autoencoders
+  - mechanistic interpretability
+  - causal intervention
+  - evaluation

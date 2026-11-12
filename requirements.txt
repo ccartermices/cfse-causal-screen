@@ -1,0 +1,13 @@
+# Versions used for every number in the paper (Python 3.10.21, CUDA 12.8).
+# For table regeneration only the first four are needed.
+torch==2.11.0
+transformers==5.16.1
+numpy==2.2.6
+scipy==1.15.3
+safetensors==0.8.0
+matplotlib==3.10.9
+datasets==5.0.1
+huggingface_hub==1.30.0
+tokenizers==0.23.2
+accelerate==1.14.0
+pandas==2.3.3

@@ -1,0 +1,403 @@
+{
+    "default_model": "qwen3.5-2b",
+    "models": {
+        "qwen3.5-2b": {
+            "model_id": "Qwen/Qwen3.5-2B",
+            "local_path": "./models/Qwen/Qwen3___5-2B",
+            "model_type": "qwen2",
+            "hidden_size": 2048,
+            "num_hidden_layers": 24,
+            "target_layers": [8, 16, 22],
+            "trust_remote_code": true,
+            "sae": {
+                "text_sae": {"input_dim": 2048, "hidden_dim": 16384, "k": 160},
+                "vision_sae": {"input_dim": 2048, "hidden_dim": 16384, "k": 160},
+                "unified_vl_sae": {"input_dim": 2048, "hidden_dim": 32768, "k": 320}
+            },
+            "lora": {
+                "target_modules": ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"]
+            },
+            "vision_encoder": {
+                "enabled": true,
+                "model_id": "google/siglip-base-patch16-224",
+                "hidden_size": 768
+            }
+        },
+        "minicpm5-1b": {
+            "model_id": "OpenBMB/MiniCPM5-1B",
+            "modelscope_id": "OpenBMB/MiniCPM5-1B",
+            "local_path": "./models/openbmb/MiniCPM5-1B",
+            "model_type": "llama",
+            "hidden_size": 1536,
+            "num_hidden_layers": 24,
+            "target_layers": [8, 16, 22],
+            "trust_remote_code": false,
+            "sae": {
+                "text_sae": {"input_dim": 1536, "hidden_dim": 12288, "k": 120},
+                "vision_sae": {"input_dim": 1536, "hidden_dim": 12288, "k": 120},
+                "unified_vl_sae": {"input_dim": 1536, "hidden_dim": 24576, "k": 240}
+            },
+            "lora": {
+                "target_modules": ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"]
+            },
+            "vision_encoder": {
+                "enabled": false,
+                "model_id": "google/siglip-base-patch16-224",
+                "hidden_size": 768
+            }
+        },
+        "tinyllama-1.1b": {
+            "model_id": "AI-ModelScope/TinyLlama-1.1B-Chat-v1.0",
+            "modelscope_id": "AI-ModelScope/TinyLlama-1.1B-Chat-v1.0",
+            "local_path": "./models/TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+            "model_type": "llama",
+            "hidden_size": 2048,
+            "num_hidden_layers": 22,
+            "target_layers": [7, 14, 21],
+            "trust_remote_code": false,
+            "sae": {
+                "text_sae": {"input_dim": 2048, "hidden_dim": 16384, "k": 160},
+                "vision_sae": {"input_dim": 2048, "hidden_dim": 16384, "k": 160},
+                "unified_vl_sae": {"input_dim": 2048, "hidden_dim": 32768, "k": 320}
+            },
+            "lora": {
+                "target_modules": ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"]
+            },
+            "vision_encoder": {
+                "enabled": false,
+                "model_id": "google/siglip-base-patch16-224",
+                "hidden_size": 768
+            }
+        },
+        "qwen3.5-0.8b": {
+            "model_id": "Qwen/Qwen3.5-0.8B",
+            "local_path": "./models/Qwen/Qwen3___5-0.8B",
+            "model_type": "qwen3_5",
+            "hidden_size": 1024,
+            "num_hidden_layers": 24,
+            "target_layers": [8, 16, 22],
+            "trust_remote_code": true,
+            "sae": {
+                "text_sae": {"input_dim": 1024, "hidden_dim": 8192, "k": 80},
+                "vision_sae": {"input_dim": 1024, "hidden_dim": 8192, "k": 80},
+                "unified_vl_sae": {"input_dim": 1024, "hidden_dim": 16384, "k": 160}
+            },
+            "lora": {
+                "target_modules": ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"]
+            },
+            "vision_encoder": {
+                "enabled": true,
+                "model_id": "google/siglip-base-patch16-224",
+                "hidden_size": 768
+            }
+        },
+        "phi-3.5-mini": {
+            "model_id": "microsoft/Phi-3.5-mini-instruct",
+            "local_path": "./models/Phi/Phi-3.5-mini-instruct",
+            "model_type": "phi3",
+            "hidden_size": 3072,
+            "num_hidden_layers": 32,
+            "target_layers": [10, 21, 30],
+            "trust_remote_code": true,
+            "sae": {
+                "text_sae": {"input_dim": 3072, "hidden_dim": 24576, "k": 240},
+                "vision_sae": {"input_dim": 3072, "hidden_dim": 24576, "k": 240},
+                "unified_vl_sae": {"input_dim": 3072, "hidden_dim": 49152, "k": 480}
+            },
+            "lora": {
+                "target_modules": ["qkv_proj", "o_proj", "gate_up_proj", "down_proj"]
+            },
+            "vision_encoder": {
+                "enabled": false,
+                "model_id": "google/siglip-base-patch16-224",
+                "hidden_size": 768
+            }
+        },
+        "ministral-3-3b": {
+            "model_id": "mistralai/Ministral-3-3B-Instruct-2512",
+            "local_path": "./models/Mistral/Ministral-3-3B-Instruct-2512",
+            "model_type": "mistral3",
+            "hidden_size": 3072,
+            "num_hidden_layers": 26,
+            "target_layers": [8, 17, 25],
+            "trust_remote_code": false,
+            "sae": {
+                "text_sae": {"input_dim": 3072, "hidden_dim": 24576, "k": 240},
+                "vision_sae": {"input_dim": 3072, "hidden_dim": 24576, "k": 240},
+                "unified_vl_sae": {"input_dim": 3072, "hidden_dim": 49152, "k": 480}
+            },
+            "lora": {
+                "target_modules": ["q_proj", "k_proj", "v_proj", "o_proj"],
+                "note": "Ministral 3 仅 attention 加 LoRA, 不打 MLP"
+            },
+            "vision_encoder": {
+                "enabled": true,
+                "model_id": "google/siglip-base-patch16-224",
+                "hidden_size": 768
+            },
+            "runtime_note": "原生 fp8 权重, 前向需 finegrained-fp8 内核(transformers 从 HF 镜像拉取 kernels-community/finegrained-fp8) + triton + kernels; 激活按 fp8 反量化后 bf16 保存, SAE 训练无额外量化。"
+        },
+        "pythia-1.4b": {
+            "model_id": "EleutherAI/pythia-1.4b",
+            "modelscope_id": "EleutherAI/pythia-1.4b",
+            "local_path": "./models/EleutherAI/pythia-1.4b",
+            "model_type": "gpt_neox",
+            "hidden_size": 2048,
+            "num_hidden_layers": 24,
+            "target_layers": [8, 16, 22],
+            "trust_remote_code": false,
+            "sae": {
+                "text_sae": {"input_dim": 2048, "hidden_dim": 16384, "k": 160},
+                "vision_sae": {"input_dim": 2048, "hidden_dim": 16384, "k": 160},
+                "unified_vl_sae": {"input_dim": 2048, "hidden_dim": 32768, "k": 320}
+            },
+            "lora": {
+                "target_modules": ["query_key_value", "dense", "dense_h_to_4h", "dense_4h_to_h"]
+            },
+            "vision_encoder": {
+                "enabled": false,
+                "model_id": "google/siglip-base-patch16-224",
+                "hidden_size": 768
+            },
+            "scale_axis_note": "阶段二规模轴: Pythia 家族基座(非 instruct), GPT-NeoX 架构, 与 IOI/Greater-Than 电路文献口径一致。"
+        },
+        "pythia-2.8b": {
+            "model_id": "EleutherAI/pythia-2.8b",
+            "modelscope_id": "EleutherAI/pythia-2.8b",
+            "local_path": "./models/EleutherAI/pythia-2.8b",
+            "model_type": "gpt_neox",
+            "hidden_size": 2560,
+            "num_hidden_layers": 32,
+            "target_layers": [10, 21, 30],
+            "trust_remote_code": false,
+            "sae": {
+                "text_sae": {"input_dim": 2560, "hidden_dim": 20480, "k": 200},
+                "vision_sae": {"input_dim": 2560, "hidden_dim": 20480, "k": 200},
+                "unified_vl_sae": {"input_dim": 2560, "hidden_dim": 40960, "k": 400}
+            },
+            "lora": {
+                "target_modules": ["query_key_value", "dense", "dense_h_to_4h", "dense_4h_to_h"]
+            },
+            "vision_encoder": {
+                "enabled": false,
+                "model_id": "google/siglip-base-patch16-224",
+                "hidden_size": 768
+            },
+            "scale_axis_note": "阶段二规模轴: Pythia 家族基座(非 instruct), GPT-NeoX 架构。"
+        },
+        "pythia-6.9b": {
+            "model_id": "EleutherAI/pythia-6.9b",
+            "modelscope_id": "EleutherAI/pythia-6.9b",
+            "local_path": "./models/EleutherAI/pythia-6.9b",
+            "model_type": "gpt_neox",
+            "hidden_size": 4096,
+            "num_hidden_layers": 32,
+            "target_layers": [10, 21, 30],
+            "trust_remote_code": false,
+            "sae": {
+                "text_sae": {"input_dim": 4096, "hidden_dim": 32768, "k": 320},
+                "vision_sae": {"input_dim": 4096, "hidden_dim": 32768, "k": 320},
+                "unified_vl_sae": {"input_dim": 4096, "hidden_dim": 65536, "k": 640}
+            },
+            "lora": {
+                "target_modules": ["query_key_value", "dense", "dense_h_to_4h", "dense_4h_to_h"]
+            },
+            "vision_encoder": {
+                "enabled": false,
+                "model_id": "google/siglip-base-patch16-224",
+                "hidden_size": 768
+            },
+            "scale_axis_note": "阶段二规模轴: Pythia 家族最大点(7B 量级), GPT-NeoX 架构, 方案里括号内可选项。"
+        },
+        "qwen2.5-7b-instruct": {
+            "model_id": "Qwen/Qwen2.5-7B-Instruct",
+            "modelscope_id": "Qwen/Qwen2.5-7B-Instruct",
+            "local_path": "./models/Qwen/Qwen2.5-7B-Instruct",
+            "model_type": "qwen2",
+            "hidden_size": 3584,
+            "num_hidden_layers": 28,
+            "target_layers": [9, 18, 26],
+            "trust_remote_code": false,
+            "sae": {
+                "text_sae": {"input_dim": 3584, "hidden_dim": 28672, "k": 280},
+                "vision_sae": {"input_dim": 3584, "hidden_dim": 28672, "k": 280},
+                "unified_vl_sae": {"input_dim": 3584, "hidden_dim": 57344, "k": 560}
+            },
+            "lora": {
+                "target_modules": ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"]
+            },
+            "vision_encoder": {
+                "enabled": false,
+                "model_id": "google/siglip-base-patch16-224",
+                "hidden_size": 768
+            },
+            "scale_axis_note": "阶段二:「对接现代基线」——现代 instruct 7B, 与 Pythia 基座形成 instruct/非-instruct 对照。"
+        }
+    },
+    "phase1_data": {
+        "text_datasets": {
+            "alpaca_cleaned": {
+                "path": "yahma/alpaca-cleaned",
+                "samples": 1000,
+                "type": "hf_dataset"
+            },
+            "c4_en": {
+                "path": "allenai/c4",
+                "subset": "en",
+                "samples": 1500,
+                "type": "hf_dataset"
+            },
+            "wikipedia_en": {
+                "path": "wikimedia/wikipedia",
+                "subset": "20231101.en",
+                "samples": 1000,
+                "type": "hf_dataset"
+            },
+            "fineweb": {
+                "path": "HuggingFaceFW/fineweb",
+                "subset": "sample-10BT",
+                "samples": 1000,
+                "type": "hf_dataset"
+            },
+            "cosmopedia_openstax": {
+                "path": "HuggingFaceTB/cosmopedia",
+                "subset": "openstax",
+                "samples": 1000,
+                "type": "hf_dataset"
+            }
+        },
+        "multimodal_datasets": {
+            "coco_caption": {
+                "path": "HuggingFaceM4/COCO",
+                "samples": 10000,
+                "type": "hf_dataset",
+                "task": "image_caption",
+                "note": "COCO 2017, ~25GB图片+标注, 可调整samples控制下载量"
+            },
+            "sharegpt4v": {
+                "path": "Lin-Chen/ShareGPT4V",
+                "subset": "ShareGPT4V",
+                "samples": 10000,
+                "type": "hf_dataset",
+                "task": "image_description",
+                "note": "ShareGPT4V, ~13GB图片, 从HF直接下载含图片"
+            }
+        },
+        "activation_collection": {
+            "text_samples": 3000,
+            "visual_samples": 1000,
+            "sample_ratio": 1.0,
+            "max_length": 256,
+            "last_n_tokens": 3
+        }
+    },
+    "phase2_sae": {
+        "text_sae": {
+            "learning_rate": 5e-4,
+            "batch_size": 2048,
+            "num_epochs": 30,
+            "weight_decay": 0.01,
+            "l1_lambda": 1e-4,
+            "warmup_epochs": 3,
+            "resample_dead_every": 5,
+            "decoder_norm": true
+        },
+        "vision_sae": {
+            "learning_rate": 5e-4,
+            "batch_size": 2048,
+            "num_epochs": 30,
+            "weight_decay": 0.01,
+            "l1_lambda": 1e-4,
+            "warmup_epochs": 3,
+            "resample_dead_every": 5,
+            "decoder_norm": true
+        },
+        "unified_vl_sae": {
+            "enabled": true,
+            "learning_rate": 2e-4,
+            "batch_size": 1024,
+            "num_epochs": 30,
+            "weight_decay": 0.01,
+            "l1_lambda": 1e-4,
+            "warmup_epochs": 3,
+            "resample_dead_every": 5,
+            "decoder_norm": true
+        }
+    },
+    "phase3_sae_ao": {
+        "feature_interpretation": {
+            "top_k_features": null,
+            "samples_per_feature": 10,
+            "use_api": false,
+            "api_type": "minimax",
+            "api_model": "MiniMax-M2.7",
+            "api_env_var": "MINIMAX_API_KEY",
+            "api_key_file": "minimax_api_key.txt",
+            "api_workers": 16,
+            "api_batch_size": 16
+        },
+        "sae_ao_training": {
+            "lora_r": 16,
+            "lora_alpha": 32,
+            "lora_dropout": 0.05,
+            "learning_rate": 2e-5,
+            "per_device_train_batch_size": 1,
+            "gradient_accumulation_steps": 8,
+            "num_train_epochs": 3,
+            "warmup_ratio": 0.1,
+            "logging_steps": 10,
+            "save_steps": 200,
+            "max_length": 384,
+            "num_act_tokens": 5
+        },
+        "sae_guided_injection": {
+            "enabled": true,
+            "injection_scale": 0.5,
+            "feature_selection_threshold": 0.1
+        }
+    },
+    "phase4_multimodal": {
+        "visual_processing": {
+            "pooling_method": "cls",
+            "projection_dim": 2048
+        },
+        "cross_modal_training": {
+            "alignment_loss_weight": 0.3,
+            "num_epochs": 2
+        }
+    },
+    "phase5_evaluation": {
+        "tasks": ["feature_retrieval", "generation_quality"],
+        "num_samples": 50,
+        "baselines": {
+            "original_ao": true,
+            "patchscopes": true,
+            "sae_direct": true,
+            "linear_probe": true,
+            "sae_feature_retrieval": true
+        },
+        "ablation": {
+            "without_sae": true,
+            "without_multimodal": true,
+            "without_feature_selection": true,
+            "without_cross_modal": true
+        }
+    },
+    "paths": {
+        "data_dir": "./data",
+        "image_dir": "./data/images",
+        "text_activation_dir": "./output/phase1/text_activations/{model_name}",
+        "visual_activation_dir": "./output/phase1/visual_activations/{model_name}",
+        "text_sae_dir": "./output/phase2/text_sae/{model_name}",
+        "vision_sae_dir": "./output/phase2/vision_sae/{model_name}",
+        "unified_vl_sae_dir": "./output/phase2/unified_vl_sae/{model_name}",
+        "sae_feature_data_dir": "./output/phase3/sae_feature_data/{model_name}",
+        "sae_ao_dir": "./output/phase3/sae_ao/{model_name}",
+        "sae_guided_dir": "./output/phase3/sae_guided/{model_name}",
+        "visual_processing_dir": "./output/phase4/visual_processing/{model_name}",
+        "cross_modal_dir": "./output/phase4/cross_modal/{model_name}",
+        "eval_dir": "./output/phase5/eval_results/{model_name}",
+        "comparison_dir": "./output/phase5/comparisons/{model_name}",
+        "ablation_dir": "./output/phase5/ablation/{model_name}"
+    }
+}
