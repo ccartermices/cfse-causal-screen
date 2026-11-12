@@ -1,0 +1,5 @@
+model,layer,task,rho(margin,CE),rho(margin,KL),rho(CE,KL),pred-margin,pred-CE,pred-KL
+qwen3.5-2b,16,ioi,0.831,0.834,0.872,0.769,0.651,0.666
+qwen3.5-2b,16,gt,0.815,0.850,0.918,0.754,0.625,0.650
+tinyllama-1.1b,21,ioi,0.660,0.707,0.937,0.538,0.513,0.455
+pythia-1.4b,16,ioi,0.803,0.765,0.968,-0.005,0.018,0.039

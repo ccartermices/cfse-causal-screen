@@ -1,0 +1,6 @@
+| model | layer | task | median |dB| | cell r | feature rho | noise/effect |
+|---|---|---|---|---|---|---|
+| qwen3.5-2b | 16 | ioi | 0.0303 | 0.641 | 0.881 | 1.26 |
+| qwen2.5-7b-instruct | 18 | gt | 0.1477 | 0.843 | 0.917 | 1.10 |
+| tinyllama-1.1b | 21 | ioi | 0.0186 | 0.639 | 0.679 | 1.34 |
+| pythia-1.4b | 16 | ioi | 0.1709 | 0.147 | 0.131 | 2.46 |

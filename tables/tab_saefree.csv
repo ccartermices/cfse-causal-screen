@@ -1,0 +1,3 @@
+model,layer,task,SAE,coordinate,random,PCA,SAE - coordinate
+qwen3.5-2b,16,ioi,nan,0.950,nan,0.728,-0.027
+tinyllama-1.1b,21,ioi,nan,0.971,nan,0.918,-0.004
