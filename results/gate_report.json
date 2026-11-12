@@ -1,0 +1,562 @@
+[
+ {
+  "path": "output\\phaseStep2\\cfse_resolution\\pythia-1.4b\\layer16\\natural_E_f32.npz",
+  "shape": [
+   200,
+   400
+  ],
+  "kappa": 0.0550457988208274,
+  "rel_pred": 0.09966284407110178,
+  "verdict": "reject",
+  "reason": "rel_pred=0.100 < 0.25，真值不可测，禁止任何选择器排名",
+  "note": "",
+  "fingerprint": {
+   "n_values": 80000,
+   "n_unique": 68746,
+   "uniq_frac": 0.859325,
+   "frac_exact_zero": 0.0878125,
+   "frac_on_grid": 0.0878375
+  },
+  "shape_terms": {
+   "tail": 0.6098810464800106,
+   "het": 0.2403487195259043,
+   "frac2": 0.0
+  },
+  "median_abs_E": 0.08576822280883789,
+  "model": "pythia-1.4b",
+  "layer": 16,
+  "task": "natural"
+ },
+ {
+  "path": "output\\phaseStep2\\cfse_resolution\\pythia-6.9b\\layer21\\ioi_E_f32.npz",
+  "shape": [
+   200,
+   400
+  ],
+  "kappa": 0.07452942948301802,
+  "rel_pred": 0.10856071401785045,
+  "verdict": "reject",
+  "reason": "rel_pred=0.109 < 0.25，真值不可测，禁止任何选择器排名",
+  "note": "",
+  "fingerprint": {
+   "n_values": 80000,
+   "n_unique": 70644,
+   "uniq_frac": 0.88305,
+   "frac_exact_zero": 0.0,
+   "frac_on_grid": 2.5e-05
+  },
+  "shape_terms": {
+   "tail": 0.8580776966843493,
+   "het": 0.22038975831832325,
+   "frac2": 0.01
+  },
+  "median_abs_E": 0.4981815814971924,
+  "model": "pythia-6.9b",
+  "layer": 21,
+  "task": "ioi"
+ },
+ {
+  "path": "output\\phaseStep2\\cfse_resolution\\qwen3.5-2b\\layer16\\natural_E_f32.npz",
+  "shape": [
+   200,
+   400
+  ],
+  "kappa": 0.08275317523457648,
+  "rel_pred": 0.1414614265356634,
+  "verdict": "reject",
+  "reason": "rel_pred=0.141 < 0.25，真值不可测，禁止任何选择器排名",
+  "note": "",
+  "fingerprint": {
+   "n_values": 80000,
+   "n_unique": 45656,
+   "uniq_frac": 0.5707,
+   "frac_exact_zero": 0.2672375,
+   "frac_on_grid": 0.26725
+  },
+  "shape_terms": {
+   "tail": 0.433901321559429,
+   "het": 0.44723934464759957,
+   "frac2": 0.0
+  },
+  "median_abs_E": 0.012240886688232422,
+  "model": "qwen3.5-2b",
+  "layer": 16,
+  "task": "natural"
+ },
+ {
+  "path": "output\\phaseStep2\\cfse_resolution\\pythia-1.4b\\layer16\\ioi_E_f32.npz",
+  "shape": [
+   200,
+   400
+  ],
+  "kappa": 0.09434959350501546,
+  "rel_pred": 0.20458454211355284,
+  "verdict": "reject",
+  "reason": "rel_pred=0.205 < 0.25，真值不可测，禁止任何选择器排名",
+  "note": "",
+  "fingerprint": {
+   "n_values": 80000,
+   "n_unique": 66775,
+   "uniq_frac": 0.8346875,
+   "frac_exact_zero": 0.0297375,
+   "frac_on_grid": 0.02975
+  },
+  "shape_terms": {
+   "tail": 0.5346802089548253,
+   "het": 0.30658191212286545,
+   "frac2": 0.025
+  },
+  "median_abs_E": 0.14823389053344727,
+  "model": "pythia-1.4b",
+  "layer": 16,
+  "task": "ioi"
+ },
+ {
+  "path": "output\\phaseStep2\\cfse_kappa\\pythia-2.8b\\layer21\\ioi_E_f32.npz",
+  "shape": [
+   200,
+   200
+  ],
+  "kappa": 0.194248952245195,
+  "rel_pred": 0.46823261831545787,
+  "verdict": "degraded",
+  "reason": "κ=0.194 ∈ [0.10,0.30)：只报集合级指标，若报逐特征排名必须附 n(rel=0.8)",
+  "note": "",
+  "fingerprint": {
+   "n_values": 40000,
+   "n_unique": 36261,
+   "uniq_frac": 0.906525,
+   "frac_exact_zero": 0.0329,
+   "frac_on_grid": 0.0329
+  },
+  "shape_terms": {
+   "tail": 0.33348781408424055,
+   "het": 0.3725336625906731,
+   "frac2": 0.185
+  },
+  "median_abs_E": 0.1192626953125,
+  "model": "pythia-2.8b",
+  "layer": 21,
+  "task": "ioi"
+ },
+ {
+  "path": "output\\phaseStep2\\cfse_resolution\\qwen3.5-2b\\layer16\\ioi_E_f32.npz",
+  "shape": [
+   200,
+   400
+  ],
+  "kappa": 0.3151129344591472,
+  "rel_pred": 0.6521540538513463,
+  "verdict": "rank_ok",
+  "reason": "κ=0.315 ≥ 0.30，rel_pred=0.652，可做逐特征排名",
+  "note": "",
+  "fingerprint": {
+   "n_values": 80000,
+   "n_unique": 52501,
+   "uniq_frac": 0.6562625,
+   "frac_exact_zero": 0.037725,
+   "frac_on_grid": 0.0377375
+  },
+  "shape_terms": {
+   "tail": 0.4096685560849813,
+   "het": 0.5206328394650258,
+   "frac2": 0.34
+  },
+  "median_abs_E": 0.01948261260986328,
+  "model": "qwen3.5-2b",
+  "layer": 16,
+  "task": "ioi"
+ },
+ {
+  "path": "output\\phaseStep2\\cfse_kappa\\qwen3.5-2b\\layer8\\ioi_E_f32.npz",
+  "shape": [
+   200,
+   200
+  ],
+  "kappa": 0.3385347971938907,
+  "rel_pred": 0.7289750768769219,
+  "verdict": "rank_ok",
+  "reason": "κ=0.339 ≥ 0.30，rel_pred=0.729，可做逐特征排名",
+  "note": "",
+  "fingerprint": {
+   "n_values": 40000,
+   "n_unique": 33643,
+   "uniq_frac": 0.841075,
+   "frac_exact_zero": 0.039075,
+   "frac_on_grid": 0.0391
+  },
+  "shape_terms": {
+   "tail": 0.6435021892492246,
+   "het": 0.21080653545323333,
+   "frac2": 0.535
+  },
+  "median_abs_E": 0.0330047607421875,
+  "model": "qwen3.5-2b",
+  "layer": 8,
+  "task": "ioi"
+ },
+ {
+  "path": "output\\phaseStep2\\cfse_kappa\\qwen3.5-2b\\layer16\\sva_E_f32.npz",
+  "shape": [
+   200,
+   200
+  ],
+  "kappa": 0.4309794624612287,
+  "rel_pred": 0.8966516762919073,
+  "verdict": "rank_ok",
+  "reason": "κ=0.431 ≥ 0.30，rel_pred=0.897，可做逐特征排名",
+  "note": "76% 的效应恰为 0：特征在该任务 prompt 上稀疏激活，有效特征数下降（不否决，但降低集合级指标的覆盖）",
+  "fingerprint": {
+   "n_values": 40000,
+   "n_unique": 8437,
+   "uniq_frac": 0.210925,
+   "frac_exact_zero": 0.756575,
+   "frac_on_grid": 0.756575
+  },
+  "shape_terms": {
+   "tail": 0.10287943065477319,
+   "het": 0.9859741842588609,
+   "frac2": 0.21
+  },
+  "median_abs_E": 0.0,
+  "model": "qwen3.5-2b",
+  "layer": 16,
+  "task": "sva"
+ },
+ {
+  "path": "output\\phaseStep2\\cfse_kappa\\qwen3.5-2b\\layer22\\ioi_E_f32.npz",
+  "shape": [
+   200,
+   200
+  ],
+  "kappa": 0.44519539772897826,
+  "rel_pred": 0.6871491487287181,
+  "verdict": "rank_ok",
+  "reason": "κ=0.445 ≥ 0.30，rel_pred=0.687，可做逐特征排名",
+  "note": "",
+  "fingerprint": {
+   "n_values": 40000,
+   "n_unique": 27112,
+   "uniq_frac": 0.6778,
+   "frac_exact_zero": 0.0602,
+   "frac_on_grid": 0.0602
+  },
+  "shape_terms": {
+   "tail": 0.2669199882185892,
+   "het": 0.566660705000204,
+   "frac2": 0.37
+  },
+  "median_abs_E": 0.008654594421386719,
+  "model": "qwen3.5-2b",
+  "layer": 22,
+  "task": "ioi"
+ },
+ {
+  "path": "output\\phaseStep2\\cfse_resolution\\qwen3.5-2b\\layer16\\gt_E_f32.npz",
+  "shape": [
+   200,
+   400
+  ],
+  "kappa": 0.44806185876172044,
+  "rel_pred": 0.6004011850296258,
+  "verdict": "rank_ok",
+  "reason": "κ=0.448 ≥ 0.30，rel_pred=0.600，可做逐特征排名",
+  "note": "",
+  "fingerprint": {
+   "n_values": 80000,
+   "n_unique": 38135,
+   "uniq_frac": 0.4766875,
+   "frac_exact_zero": 0.053375,
+   "frac_on_grid": 0.0534125
+  },
+  "shape_terms": {
+   "tail": 0.22557803565703283,
+   "het": 0.5536999937952184,
+   "frac2": 0.275
+  },
+  "median_abs_E": 0.013519287109375,
+  "model": "qwen3.5-2b",
+  "layer": 16,
+  "task": "gt"
+ },
+ {
+  "path": "output\\phaseStep2\\cfse_kappa\\phi-3.5-mini\\layer21\\gt_E_f32.npz",
+  "shape": [
+   200,
+   200
+  ],
+  "kappa": 0.49755313922384453,
+  "rel_pred": 0.8164640441011025,
+  "verdict": "rank_ok",
+  "reason": "κ=0.498 ≥ 0.30，rel_pred=0.816，可做逐特征排名",
+  "note": "",
+  "fingerprint": {
+   "n_values": 40000,
+   "n_unique": 29763,
+   "uniq_frac": 0.744075,
+   "frac_exact_zero": 0.0,
+   "frac_on_grid": 0.0
+  },
+  "shape_terms": {
+   "tail": 0.5231391831088728,
+   "het": 0.3759883451873402,
+   "frac2": 0.64
+  },
+  "median_abs_E": 0.041751861572265625,
+  "model": "phi-3.5-mini",
+  "layer": 21,
+  "task": "gt"
+ },
+ {
+  "path": "output\\phaseStep2\\cfse_kappa\\qwen2.5-7b-instruct\\layer18\\ioi_E_f32.npz",
+  "shape": [
+   200,
+   200
+  ],
+  "kappa": 0.5196794903822053,
+  "rel_pred": 0.8764127278181953,
+  "verdict": "rank_ok",
+  "reason": "κ=0.520 ≥ 0.30，rel_pred=0.876，可做逐特征排名",
+  "note": "",
+  "fingerprint": {
+   "n_values": 40000,
+   "n_unique": 37864,
+   "uniq_frac": 0.9466,
+   "frac_exact_zero": 0.0,
+   "frac_on_grid": 2.5e-05
+  },
+  "shape_terms": {
+   "tail": 0.6680292071294435,
+   "het": 0.25351527398954593,
+   "frac2": 0.745
+  },
+  "median_abs_E": 0.1685171127319336,
+  "model": "qwen2.5-7b-instruct",
+  "layer": 18,
+  "task": "ioi"
+ },
+ {
+  "path": "output\\phaseStep2\\cfse_kappa\\qwen3.5-2b\\layer16\\antonym_E_f32.npz",
+  "shape": [
+   200,
+   200
+  ],
+  "kappa": 0.533471731154392,
+  "rel_pred": 0.7764116177904448,
+  "verdict": "rank_ok",
+  "reason": "κ=0.533 ≥ 0.30，rel_pred=0.776，可做逐特征排名",
+  "note": "80% 的效应恰为 0：特征在该任务 prompt 上稀疏激活，有效特征数下降（不否决，但降低集合级指标的覆盖）",
+  "fingerprint": {
+   "n_values": 40000,
+   "n_unique": 7781,
+   "uniq_frac": 0.194525,
+   "frac_exact_zero": 0.79585,
+   "frac_on_grid": 0.79585
+  },
+  "shape_terms": {
+   "tail": 0.0,
+   "het": 0.9921774380514844,
+   "frac2": 0.075
+  },
+  "median_abs_E": 0.0,
+  "model": "qwen3.5-2b",
+  "layer": 16,
+  "task": "antonym"
+ },
+ {
+  "path": "output\\phaseStep2\\cfse_kappa\\ministral-3-3b\\layer17\\ioi_E_f32.npz",
+  "shape": [
+   200,
+   200
+  ],
+  "kappa": 0.5726904619915976,
+  "rel_pred": 0.895878556963924,
+  "verdict": "rank_ok",
+  "reason": "κ=0.573 ≥ 0.30，rel_pred=0.896，可做逐特征排名",
+  "note": "",
+  "fingerprint": {
+   "n_values": 40000,
+   "n_unique": 36761,
+   "uniq_frac": 0.919025,
+   "frac_exact_zero": 0.0,
+   "frac_on_grid": 0.0
+  },
+  "shape_terms": {
+   "tail": 0.6933214720411999,
+   "het": 0.2447298623397148,
+   "frac2": 0.735
+  },
+  "median_abs_E": 0.03945660591125488,
+  "model": "ministral-3-3b",
+  "layer": 17,
+  "task": "ioi"
+ },
+ {
+  "path": "output\\phaseStep2\\cfse_kappa\\qwen3.5-2b\\layer16\\capital_E_f32.npz",
+  "shape": [
+   200,
+   200
+  ],
+  "kappa": 0.6224623167327976,
+  "rel_pred": 0.6782482187054677,
+  "verdict": "rank_ok",
+  "reason": "κ=0.622 ≥ 0.30，rel_pred=0.678，可做逐特征排名",
+  "note": "80% 的效应恰为 0：特征在该任务 prompt 上稀疏激活，有效特征数下降（不否决，但降低集合级指标的覆盖）",
+  "fingerprint": {
+   "n_values": 40000,
+   "n_unique": 6384,
+   "uniq_frac": 0.1596,
+   "frac_exact_zero": 0.798925,
+   "frac_on_grid": 0.798925
+  },
+  "shape_terms": {
+   "tail": 0.0,
+   "het": 0.9963201335783091,
+   "frac2": 0.105
+  },
+  "median_abs_E": 0.0,
+  "model": "qwen3.5-2b",
+  "layer": 16,
+  "task": "capital"
+ },
+ {
+  "path": "output\\phaseStep2\\cfse_kappa\\tinyllama-1.1b\\layer14\\ioi_E_f32.npz",
+  "shape": [
+   200,
+   200
+  ],
+  "kappa": 0.6396210919345467,
+  "rel_pred": 0.912845593639841,
+  "verdict": "rank_ok",
+  "reason": "κ=0.640 ≥ 0.30，rel_pred=0.913，可做逐特征排名",
+  "note": "",
+  "fingerprint": {
+   "n_values": 40000,
+   "n_unique": 37499,
+   "uniq_frac": 0.937475,
+   "frac_exact_zero": 0.0078,
+   "frac_on_grid": 0.007825
+  },
+  "shape_terms": {
+   "tail": 0.5290537212431506,
+   "het": 0.5282085111245629,
+   "frac2": 0.695
+  },
+  "median_abs_E": 0.06313419342041016,
+  "model": "tinyllama-1.1b",
+  "layer": 14,
+  "task": "ioi"
+ },
+ {
+  "path": "output\\phaseStep2\\cfse_kappa\\minicpm5-1b\\layer16\\ioi_E_f32.npz",
+  "shape": [
+   200,
+   200
+  ],
+  "kappa": 0.6702538056146037,
+  "rel_pred": 0.8895925748143705,
+  "verdict": "rank_ok",
+  "reason": "κ=0.670 ≥ 0.30，rel_pred=0.890，可做逐特征排名",
+  "note": "",
+  "fingerprint": {
+   "n_values": 40000,
+   "n_unique": 36783,
+   "uniq_frac": 0.919575,
+   "frac_exact_zero": 0.01425,
+   "frac_on_grid": 0.01425
+  },
+  "shape_terms": {
+   "tail": 0.424555440037693,
+   "het": 0.6054580845094278,
+   "frac2": 0.625
+  },
+  "median_abs_E": 0.05275297164916992,
+  "model": "minicpm5-1b",
+  "layer": 16,
+  "task": "ioi"
+ },
+ {
+  "path": "output\\phaseStep2\\cfse_kappa\\minicpm5-1b\\layer16\\sva_E_f32.npz",
+  "shape": [
+   200,
+   200
+  ],
+  "kappa": 0.7087449468359849,
+  "rel_pred": 0.950193699842496,
+  "verdict": "rank_ok",
+  "reason": "κ=0.709 ≥ 0.30，rel_pred=0.950，可做逐特征排名",
+  "note": "",
+  "fingerprint": {
+   "n_values": 40000,
+   "n_unique": 24012,
+   "uniq_frac": 0.6003,
+   "frac_exact_zero": 0.319575,
+   "frac_on_grid": 0.3196
+  },
+  "shape_terms": {
+   "tail": 0.40652408050768807,
+   "het": 0.9768458916558374,
+   "frac2": 0.525
+  },
+  "median_abs_E": 0.03165578842163086,
+  "model": "minicpm5-1b",
+  "layer": 16,
+  "task": "sva"
+ },
+ {
+  "path": "output\\phaseStep2\\cfse_kappa\\tinyllama-1.1b\\layer14\\sva_E_f32.npz",
+  "shape": [
+   200,
+   200
+  ],
+  "kappa": 0.8494403111199579,
+  "rel_pred": 0.9563326708167704,
+  "verdict": "rank_ok",
+  "reason": "κ=0.849 ≥ 0.30，rel_pred=0.956，可做逐特征排名",
+  "note": "",
+  "fingerprint": {
+   "n_values": 40000,
+   "n_unique": 30600,
+   "uniq_frac": 0.765,
+   "frac_exact_zero": 0.176875,
+   "frac_on_grid": 0.176875
+  },
+  "shape_terms": {
+   "tail": 0.5741200377780968,
+   "het": 0.9363203742591938,
+   "frac2": 0.675
+  },
+  "median_abs_E": 0.04219341278076172,
+  "model": "tinyllama-1.1b",
+  "layer": 14,
+  "task": "sva"
+ },
+ {
+  "path": "output\\phaseStep2\\cfse_kappa\\qwen3.5-0.8b\\layer16\\ioi_E_f32.npz",
+  "shape": [
+   200,
+   200
+  ],
+  "kappa": 0.9597872684186509,
+  "rel_pred": 0.83610805520138,
+  "verdict": "rank_ok",
+  "reason": "κ=0.960 ≥ 0.30，rel_pred=0.836，可做逐特征排名",
+  "note": "",
+  "fingerprint": {
+   "n_values": 40000,
+   "n_unique": 33987,
+   "uniq_frac": 0.849675,
+   "frac_exact_zero": 0.03995,
+   "frac_on_grid": 0.03995
+  },
+  "shape_terms": {
+   "tail": 0.1932480485090953,
+   "het": 0.5989016999671675,
+   "frac2": 0.565
+  },
+  "median_abs_E": 0.03439760208129883,
+  "model": "qwen3.5-0.8b",
+  "layer": 16,
+  "task": "ioi"
+ }
+]

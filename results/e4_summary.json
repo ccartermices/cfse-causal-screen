@@ -1,0 +1,293 @@
+{
+ "results": [
+  {
+   "schema": "cfse_e4_dose/v1",
+   "model": "qwen3.5-2b",
+   "layer": 16,
+   "task": "ioi",
+   "timestamp": "2026-11-04T18:14:12",
+   "n_prompts": 200,
+   "n_features": 60,
+   "alphas": [
+    0.25,
+    0.5,
+    1.0,
+    2.0,
+    3.0,
+    5.0
+   ],
+   "curve": [
+    {
+     "alpha": 0.25,
+     "rho_all": 0.7126424006668521,
+     "rho_hi_pred": 0.6766917293233082,
+     "rho_mid_pred": 0.26917293233082706,
+     "rho_lo_pred": -0.02706766917293233,
+     "median_abs_effect": 0.016541481018066406,
+     "p90_abs_effect": 0.04442291259765625,
+     "sign_acc": 0.7666666666666667,
+     "flip_rate": 0.0,
+     "rho_drop_vs_alpha1": 0.21661572659071948
+    },
+    {
+     "alpha": 0.5,
+     "rho_all": 0.8582383995554321,
+     "rho_hi_pred": 0.8345864661654135,
+     "rho_mid_pred": 0.6390977443609022,
+     "rho_lo_pred": -0.09022556390977443,
+     "median_abs_effect": 0.01838207244873047,
+     "p90_abs_effect": 0.04950799942016602,
+     "sign_acc": 0.85,
+     "flip_rate": 0.0,
+     "rho_drop_vs_alpha1": 0.07101972770213949
+    },
+    {
+     "alpha": 1.0,
+     "rho_all": 0.9292581272575716,
+     "rho_hi_pred": 0.8165413533834586,
+     "rho_mid_pred": 0.5609022556390978,
+     "rho_lo_pred": 0.1639097744360902,
+     "median_abs_effect": 0.021706104278564453,
+     "p90_abs_effect": 0.061891937255859404,
+     "sign_acc": 0.85,
+     "flip_rate": 0.0,
+     "rho_drop_vs_alpha1": 0.0
+    },
+    {
+     "alpha": 2.0,
+     "rho_all": 0.9367602111697696,
+     "rho_hi_pred": 0.8887218045112781,
+     "rho_mid_pred": 0.5894736842105263,
+     "rho_lo_pred": 0.45112781954887216,
+     "median_abs_effect": 0.028852462768554688,
+     "p90_abs_effect": 0.09924526214599613,
+     "sign_acc": 0.9333333333333333,
+     "flip_rate": 0.0,
+     "rho_drop_vs_alpha1": -0.0075020839121979765
+    },
+    {
+     "alpha": 3.0,
+     "rho_all": 0.9219227563212006,
+     "rho_hi_pred": 0.8270676691729323,
+     "rho_mid_pred": 0.5654135338345864,
+     "rho_lo_pred": 0.5488721804511278,
+     "median_abs_effect": 0.03558921813964844,
+     "p90_abs_effect": 0.1420651435852051,
+     "sign_acc": 0.9,
+     "flip_rate": 0.0,
+     "rho_drop_vs_alpha1": 0.007335370936371044
+    },
+    {
+     "alpha": 5.0,
+     "rho_all": 0.8267296471242014,
+     "rho_hi_pred": 0.6105263157894737,
+     "rho_mid_pred": 0.3443609022556391,
+     "rho_lo_pred": 0.312781954887218,
+     "median_abs_effect": 0.04916572570800781,
+     "p90_abs_effect": 0.235675048828125,
+     "sign_acc": 0.9166666666666666,
+     "flip_rate": 0.0,
+     "rho_drop_vs_alpha1": 0.10252848013337024
+    }
+   ],
+   "rho_alpha1": 0.9292581272575716,
+   "rho_alpha5": 0.8267296471242014,
+   "rho_drop_total": 0.10252848013337024,
+   "b0_mean": 4.204599051475525,
+   "npz": "output\\phaseStep2\\cfse_e4_dose\\qwen3.5-2b\\layer16\\ioi.npz"
+  },
+  {
+   "schema": "cfse_e4_dose/v1",
+   "model": "tinyllama-1.1b",
+   "layer": 21,
+   "task": "ioi",
+   "timestamp": "2026-11-04T18:16:09",
+   "n_prompts": 200,
+   "n_features": 60,
+   "alphas": [
+    0.25,
+    0.5,
+    1.0,
+    2.0,
+    3.0,
+    5.0
+   ],
+   "curve": [
+    {
+     "alpha": 0.25,
+     "rho_all": 0.6971380939149766,
+     "rho_hi_pred": 0.4240601503759398,
+     "rho_mid_pred": 0.44360902255639095,
+     "rho_lo_pred": -0.11729323308270674,
+     "median_abs_effect": 0.007579803466796875,
+     "p90_abs_effect": 0.020146417617797854,
+     "sign_acc": 0.8833333333333333,
+     "flip_rate": 0.0,
+     "rho_drop_vs_alpha1": 0.2679633231453181
+    },
+    {
+     "alpha": 0.5,
+     "rho_all": 0.9040844679077523,
+     "rho_hi_pred": 0.8421052631578947,
+     "rho_mid_pred": 0.38947368421052625,
+     "rho_lo_pred": 0.49624060150375937,
+     "median_abs_effect": 0.01092529296875,
+     "p90_abs_effect": 0.02888550758361817,
+     "sign_acc": 0.9,
+     "flip_rate": 0.0,
+     "rho_drop_vs_alpha1": 0.06101694915254241
+    },
+    {
+     "alpha": 1.0,
+     "rho_all": 0.9651014170602947,
+     "rho_hi_pred": 0.9488721804511278,
+     "rho_mid_pred": 0.7187969924812029,
+     "rho_lo_pred": 0.43909774436090226,
+     "median_abs_effect": 0.01761174201965332,
+     "p90_abs_effect": 0.046637248992919926,
+     "sign_acc": 0.9333333333333333,
+     "flip_rate": 0.0,
+     "rho_drop_vs_alpha1": 0.0
+    },
+    {
+     "alpha": 2.0,
+     "rho_all": 0.9877188107807726,
+     "rho_hi_pred": 0.9819548872180449,
+     "rho_mid_pred": 0.8962406015037594,
+     "rho_lo_pred": 0.8105263157894737,
+     "median_abs_effect": 0.03142738342285156,
+     "p90_abs_effect": 0.08496141433715822,
+     "sign_acc": 0.95,
+     "flip_rate": 0.0,
+     "rho_drop_vs_alpha1": -0.022617393720477885
+    },
+    {
+     "alpha": 3.0,
+     "rho_all": 0.97026951931092,
+     "rho_hi_pred": 0.9413533834586465,
+     "rho_mid_pred": 0.8962406015037594,
+     "rho_lo_pred": 0.47518796992481205,
+     "median_abs_effect": 0.04564785957336426,
+     "p90_abs_effect": 0.12374868392944338,
+     "sign_acc": 0.95,
+     "flip_rate": 0.0,
+     "rho_drop_vs_alpha1": -0.0051681022506252505
+    },
+    {
+     "alpha": 5.0,
+     "rho_all": 0.9547096415671023,
+     "rho_hi_pred": 0.8917293233082706,
+     "rho_mid_pred": 0.732330827067669,
+     "rho_lo_pred": 0.5924812030075187,
+     "median_abs_effect": 0.07359886169433594,
+     "p90_abs_effect": 0.20227680206298837,
+     "sign_acc": 0.85,
+     "flip_rate": 0.0,
+     "rho_drop_vs_alpha1": 0.010391775493192479
+    }
+   ],
+   "rho_alpha1": 0.9651014170602947,
+   "rho_alpha5": 0.9547096415671023,
+   "rho_drop_total": 0.010391775493192479,
+   "b0_mean": 6.601362884044647,
+   "npz": "output\\phaseStep2\\cfse_e4_dose\\tinyllama-1.1b\\layer21\\ioi.npz"
+  },
+  {
+   "schema": "cfse_e4_dose/v1",
+   "model": "pythia-1.4b",
+   "layer": 16,
+   "task": "ioi",
+   "timestamp": "2026-11-04T18:17:39",
+   "n_prompts": 200,
+   "n_features": 60,
+   "alphas": [
+    0.25,
+    0.5,
+    1.0,
+    2.0,
+    3.0,
+    5.0
+   ],
+   "curve": [
+    {
+     "alpha": 0.25,
+     "rho_all": 0.07307585440400112,
+     "rho_hi_pred": 0.010526315789473682,
+     "rho_mid_pred": 0.17593984962406017,
+     "rho_lo_pred": -0.34285714285714286,
+     "median_abs_effect": 0.1163182258605957,
+     "p90_abs_effect": 0.3929888725280762,
+     "sign_acc": 0.4666666666666667,
+     "flip_rate": 0.0,
+     "rho_drop_vs_alpha1": -0.0693525979438733
+    },
+    {
+     "alpha": 0.5,
+     "rho_all": 0.1869408168935816,
+     "rho_hi_pred": 0.019548872180451125,
+     "rho_mid_pred": 0.20150375939849624,
+     "rho_lo_pred": 0.30977443609022554,
+     "median_abs_effect": 0.15020370483398438,
+     "p90_abs_effect": 0.5012893676757812,
+     "sign_acc": 0.5833333333333334,
+     "flip_rate": 0.0,
+     "rho_drop_vs_alpha1": -0.1832175604334538
+    },
+    {
+     "alpha": 1.0,
+     "rho_all": 0.003723256460127814,
+     "rho_hi_pred": -0.17593984962406017,
+     "rho_mid_pred": -0.15939849624060148,
+     "rho_lo_pred": -0.1894736842105263,
+     "median_abs_effect": 0.18318748474121094,
+     "p90_abs_effect": 0.5680011749267578,
+     "sign_acc": 0.5333333333333333,
+     "flip_rate": 0.0,
+     "rho_drop_vs_alpha1": 0.0
+    },
+    {
+     "alpha": 2.0,
+     "rho_all": 0.16676854681856074,
+     "rho_hi_pred": 0.22556390977443608,
+     "rho_mid_pred": 0.4601503759398496,
+     "rho_lo_pred": 0.23157894736842105,
+     "median_abs_effect": 0.21575307846069336,
+     "p90_abs_effect": 0.6330428123474121,
+     "sign_acc": 0.5333333333333333,
+     "flip_rate": 0.0,
+     "rho_drop_vs_alpha1": -0.16304529035843293
+    },
+    {
+     "alpha": 3.0,
+     "rho_all": 0.12870241733814952,
+     "rho_hi_pred": 0.4060150375939849,
+     "rho_mid_pred": 0.1744360902255639,
+     "rho_lo_pred": -0.013533834586466165,
+     "median_abs_effect": 0.23306894302368164,
+     "p90_abs_effect": 0.6592315673828125,
+     "sign_acc": 0.65,
+     "flip_rate": 0.0,
+     "rho_drop_vs_alpha1": -0.1249791608780217
+    },
+    {
+     "alpha": 5.0,
+     "rho_all": 0.33753820505696036,
+     "rho_hi_pred": 0.060150375939849614,
+     "rho_mid_pred": 0.18796992481203004,
+     "rho_lo_pred": 0.021052631578947364,
+     "median_abs_effect": 0.2738971710205078,
+     "p90_abs_effect": 0.7631291389465332,
+     "sign_acc": 0.7166666666666667,
+     "flip_rate": 0.0,
+     "rho_drop_vs_alpha1": -0.33381494859683253
+    }
+   ],
+   "rho_alpha1": 0.003723256460127814,
+   "rho_alpha5": 0.33753820505696036,
+   "rho_drop_total": -0.33381494859683253,
+   "b0_mean": 4.2998249721527095,
+   "npz": "output\\phaseStep2\\cfse_e4_dose\\pythia-1.4b\\layer16\\ioi.npz"
+  }
+ ],
+ "timestamp": "2026-11-04T18:17:39"
+}

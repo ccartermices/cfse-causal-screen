@@ -1,0 +1,85 @@
+{
+  "timestamp": "2026-10-20T01:57:27.705643",
+  "part1_selector_cnorm": {
+    "eta2": {
+      "metric": 0.012746291880386958,
+      "model": 0.09727389021917052,
+      "layer_slot": 0.02416213315587542,
+      "task": 0.005385017771573631,
+      "N": 0.18411677874216364
+    },
+    "residual": 0.6761567196695846,
+    "n": 1440,
+    "levels": {
+      "metric": [
+        "M1_act_freq_task",
+        "M2_mean_act_task",
+        "M3_max_act_task",
+        "M4_recon_mse_gain",
+        "M5_ctx_coherence",
+        "M6_corpus_freq"
+      ],
+      "model": [
+        "minicpm5-1b",
+        "ministral-3-3b",
+        "phi-3.5-mini",
+        "pythia-1.4b",
+        "pythia-2.8b",
+        "pythia-6.9b",
+        "qwen2.5-7b-instruct",
+        "qwen3.5-0.8b",
+        "qwen3.5-2b",
+        "tinyllama-1.1b"
+      ],
+      "layer_slot": [
+        "early",
+        "late",
+        "mid"
+      ],
+      "task": [
+        "gt",
+        "ioi"
+      ],
+      "N": [
+        1,
+        5,
+        10,
+        20,
+        50
+      ]
+    }
+  },
+  "part2_feature_effect": {
+    "eta2": {
+      "model": 0.2001453447511711,
+      "layer_slot": 0.0852528825511989,
+      "task": 0.002206516887539912
+    },
+    "residual": 0.7136552483000728,
+    "n": 10200,
+    "levels": {
+      "model": [
+        "minicpm5-1b",
+        "ministral-3-3b",
+        "phi-3.5-mini",
+        "pythia-1.4b",
+        "pythia-2.8b",
+        "pythia-6.9b",
+        "qwen2.5-7b-instruct",
+        "qwen3.5-0.8b",
+        "qwen3.5-2b",
+        "tinyllama-1.1b"
+      ],
+      "layer_slot": [
+        "early",
+        "late",
+        "mid"
+      ],
+      "task": [
+        "gt",
+        "ioi",
+        "ioi_distract"
+      ]
+    }
+  }
+}

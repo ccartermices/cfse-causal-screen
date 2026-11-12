@@ -1,0 +1,110 @@
+{
+ "grid48_rho_pred_vs_M2": {
+  "unclustered": {
+   "wins": 909,
+   "losses": 51,
+   "ties": 0,
+   "n": 960,
+   "p": 4.5211884841204015e-204
+  },
+  "clustered": {
+   "wins": 46,
+   "losses": 2,
+   "ties": 0,
+   "n": 48,
+   "p": 8.363087999896379e-12
+  },
+  "clustered_wilcoxon": {
+   "n": 48,
+   "p": 2.7012176190962783e-09
+  },
+  "clustered_bootstrap": {
+   "p": 0.0,
+   "observed": 0.522773890545965,
+   "n_combos": 48
+  },
+  "n_units_unclustered": 960,
+  "n_units_clustered": 48
+ },
+ "grid48_ndcg20_pred_vs_M2": {
+  "unclustered": {
+   "wins": 931,
+   "losses": 29,
+   "ties": 0,
+   "n": 960,
+   "p": 4.783634401076457e-234
+  },
+  "clustered": {
+   "wins": 47,
+   "losses": 1,
+   "ties": 0,
+   "n": 48,
+   "p": 3.481659405224491e-13
+  },
+  "clustered_wilcoxon": {
+   "n": 48,
+   "p": 1.9722167788679274e-09
+  },
+  "clustered_bootstrap": {
+   "p": 0.0,
+   "observed": 0.4864580643303557,
+   "n_combos": 48
+  },
+  "n_units_unclustered": 960,
+  "n_units_clustered": 48
+ },
+ "setlevel_N50_z_pred_dir_vs_M2": {
+  "unclustered": {
+   "wins": 83,
+   "losses": 13,
+   "ties": 0,
+   "n": 96,
+   "p": 1.202072479759671e-13
+  },
+  "clustered": {
+   "wins": 42,
+   "losses": 6,
+   "ties": 0,
+   "n": 48,
+   "p": 1.0087482138487758e-07
+  },
+  "clustered_wilcoxon": {
+   "n": 48,
+   "p": 3.428379335860491e-08
+  },
+  "clustered_bootstrap": {
+   "p": 0.0,
+   "observed": 8.578314215065005,
+   "n_combos": 48
+  },
+  "n_units_unclustered": 96,
+  "n_units_clustered": 48
+ },
+ "attrib_paired": {
+  "unclustered": {
+   "wins": 119,
+   "losses": 9,
+   "ties": 0,
+   "n": 128,
+   "p": 1.2103259925670795e-25
+  },
+  "clustered": {
+   "wins": 59,
+   "losses": 5,
+   "ties": 0,
+   "n": 64,
+   "p": 9.002816938122327e-13
+  },
+  "clustered_wilcoxon": {
+   "n": 64,
+   "p": 9.904757150433177e-12
+  },
+  "clustered_bootstrap": {
+   "p": 0.0,
+   "observed": 0.6404066276978615,
+   "n_combos": 64
+  },
+  "n_units_unclustered": 128,
+  "n_units_clustered": 64
+ }
+}

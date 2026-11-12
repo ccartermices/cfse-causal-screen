@@ -1,0 +1,75 @@
+{
+ "same_prompt": {
+  "pred_full": {
+   "pooled": 0.7251562782599928,
+   "mean_combo": 0.6752229986567015,
+   "std_combo": 0.30302983606308775
+  },
+  "pred_last": {
+   "pooled": 0.07855318185904302,
+   "mean_combo": 0.08434371994712636,
+   "std_combo": 0.17491497088988867
+  },
+  "pred_align": {
+   "pooled": 0.0649452010625205,
+   "mean_combo": 0.07045966699204963,
+   "std_combo": 0.10199684950005489
+  },
+  "M2_mean_act_task": {
+   "pooled": 0.20572364866454365,
+   "mean_combo": 0.18283658093295524,
+   "std_combo": 0.14034003559767322
+  }
+ },
+ "n_combos_same_prompt": 60,
+ "same_prompt_admissible": {
+  "n": 38,
+  "pred_full": {
+   "mean_combo": 0.7856478439142581
+  },
+  "M2": {
+   "mean_combo": 0.21802738538953018
+  }
+ },
+ "held_out": {
+  "per_combo_all48": {
+   "pred_full": 0.7343415959459136,
+   "M2": 0.2111903982675227,
+   "M3": 0.18784676749480214
+  },
+  "per_combo_all48_n": 96,
+  "pooled_admit38": {
+   "pred_full": {
+    "pooled": 0.9072305855725424,
+    "n_pairs": 15200
+   },
+   "M2": {
+    "pooled": 0.6328766143518375,
+    "n_pairs": 15200
+   },
+   "M3": {
+    "pooled": 0.61888689768752,
+    "n_pairs": 15200
+   }
+  },
+  "n_admit": 38,
+  "group_level": {
+   "n_points": 76,
+   "spearman": {
+    "pred_full": 0.995023923444976,
+    "M2": 0.8167053998632946
+   },
+   "between_combo_sd": {
+    "pred_full": 0.0024954647891415856,
+    "M2": 6.6425360717126365,
+    "effect": 0.03897225503924272
+   }
+  }
+ },
+ "ratios": {
+  "same_prompt_per_combo": 3.6930410490682966,
+  "same_prompt_pooled": 3.5249048078203424,
+  "held_out_per_combo": 3.477154273915881,
+  "held_out_pooled": 1.4335030952307906
+ }
+}

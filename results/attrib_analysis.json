@@ -1,0 +1,84 @@
+{
+ "n_combos": 16,
+ "full": {
+  "pred_full": {
+   "same_prompt_pooled": 0.7119123765131687,
+   "same_prompt_per_combo": 0.6684409163840457,
+   "heldout_per_combo": 0.7128185704642618,
+   "heldout_per_combo_sd": 0.2905294631635438,
+   "n": 32
+  },
+  "ig": {
+   "same_prompt_pooled": 0.624161291329248,
+   "same_prompt_per_combo": 0.6007163584392647,
+   "heldout_per_combo": 0.6342701848796221,
+   "heldout_per_combo_sd": 0.24360146684875178,
+   "n": 32
+  },
+  "attn": {
+   "same_prompt_pooled": 0.6060740164313971,
+   "same_prompt_per_combo": 0.5846238920562649,
+   "heldout_per_combo": 0.6321156622665567,
+   "heldout_per_combo_sd": 0.25302805039256343,
+   "n": 32
+  },
+  "M2": {
+   "same_prompt_pooled": 0.20952440912665338,
+   "same_prompt_per_combo": 0.19004568111646597,
+   "heldout_per_combo": 0.20119562364059104,
+   "heldout_per_combo_sd": 0.1181217116686489,
+   "n": 32
+  },
+  "random": {
+   "same_prompt_pooled": 0.002760484494633221,
+   "same_prompt_per_combo": -0.002246981879116007,
+   "heldout_per_combo": 0.007943682967074176,
+   "heldout_per_combo_sd": 0.07610289913863819,
+   "n": 32
+  }
+ },
+ "shap_subset": {
+  "shap": {
+   "same_prompt_pooled": 0.8206077952399183,
+   "same_prompt_per_combo": 0.7865282751431777,
+   "heldout_per_combo": 0.7181066176470589,
+   "heldout_per_combo_sd": 0.2710973156166366,
+   "n": 32
+  },
+  "pred_full": {
+   "same_prompt_pooled": 0.763651377758771,
+   "same_prompt_per_combo": 0.7156225438678571,
+   "heldout_per_combo": 0.7404411764705883,
+   "heldout_per_combo_sd": 0.3017454895102514,
+   "n": 32
+  },
+  "ig": {
+   "same_prompt_pooled": 0.6824330764159829,
+   "same_prompt_per_combo": 0.6606069019085792,
+   "heldout_per_combo": 0.6659926470588236,
+   "heldout_per_combo_sd": 0.2694254960953016,
+   "n": 32
+  },
+  "attn": {
+   "same_prompt_pooled": 0.6432278176239945,
+   "same_prompt_per_combo": 0.6435035282936155,
+   "heldout_per_combo": 0.6601102941176471,
+   "heldout_per_combo_sd": 0.31099214857461116,
+   "n": 32
+  },
+  "M2": {
+   "same_prompt_pooled": 0.060216965758956555,
+   "same_prompt_per_combo": 0.0819260359364069,
+   "heldout_per_combo": 0.11066176470588235,
+   "heldout_per_combo_sd": 0.23475953265821461,
+   "n": 32
+  },
+  "random": {
+   "same_prompt_pooled": -0.045986860153377454,
+   "same_prompt_per_combo": -0.043448349197120234,
+   "heldout_per_combo": 0.025091911764705883,
+   "heldout_per_combo_sd": 0.21920945999365263,
+   "n": 32
+  }
+ }
+}
